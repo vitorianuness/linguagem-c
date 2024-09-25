@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+ //b) Leia uma quantidade de aulas de um docente, o tempo em minutos de cada aula,
+ //converta e apresente o total em horas (de aulas)
+
+ int main (){
+ float qa, tminutos, thoras;
+
+ printf("Informe a sua quantidade de aulas:");
+ scanf("%f", &qa);
+ printf("O tempo da aula em MINUTOS:");
+ scanf("%f", &tminutos);
+ thoras = (qa * tminutos)/60;
+
+ printf("O tempo total de aulas em horas é de %2.0f", thoras);
+
+ return 0; }
