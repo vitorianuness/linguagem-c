@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+//Leia o valor de um produto (em reais) e a quantidade adquirida, calcule o valor total
+//pago em reais e o valor com 10% de desconto para pagamentos à vista e o valor total 
+//pago em reais com pagamentos em 3x (prazo) com 5% de acrescimo. Calcule também o valor total por pagamentos 
+//em dólar, valendo que a cotação do dólar do dia seja R$ 5,51. Apresentar todos os valores
+int main()
+{
+float valor, qntd, vtr, v10, vp, vd;
+printf("Informe o valor de um produto:");
+scanf("%f", &valor);
+printf("Informe a quantidade de produto adquirida:");
+scanf("%f", &qntd);
+vtr= valor * qntd; //valor total pago em reais
+v10 = vtr - (vtr * 10/100); // valor com 10% de desconto
+vp = vtr + (vtr*5)/100;
+vd= vtr/5,51;
+
+printf(" Valor total pago em reais: %0.1f. Valor com de desconto: %0.1f. Valor com acrescimmo de 5%: %0.1f. Valor em dolar: %0.1f dolares ", vtr, v10, vp,vd);
+
+return 0; 
+}
